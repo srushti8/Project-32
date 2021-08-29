@@ -5,7 +5,7 @@ const Constraint = Matter.Constraint;
 
 var engine, world;
 var backgroundImg;
-var hour, time;
+var hour;
 
 var bg = "sunrise.png";
 
@@ -50,8 +50,6 @@ async function getBackgroundImg(){
     var datetime = responsejson.datetime;
     // slice the datetime to extract hour
     var hour=datetime.slice(11,13);
-    var time=datetie.slice(11,13)
-
     
     if(hour>=0 && hour<18 ){
         bg = "sunrise.png";
